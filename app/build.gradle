@@ -15,11 +15,11 @@ android {
 
     productFlavors {
         sensorsConnected {
-            buildConfigField "boolean", "MOCK_MODE", "true"
+            buildConfigField "boolean", "MOCK_MODE", "false"
         }
 
         sensorsNotConnected {
-            buildConfigField "boolean", "MOCK_MODE", "false"
+            buildConfigField "boolean", "MOCK_MODE", "true"
         }
     }
 }
