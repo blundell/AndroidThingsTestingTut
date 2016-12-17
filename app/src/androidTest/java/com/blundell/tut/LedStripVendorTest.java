@@ -11,6 +11,9 @@ import org.junit.Test;
  * Therefore these tests are good to run when when you first
  * learn a piece of hardware or you change to a new manufacturer
  * to ensure you have the same contracted behaviour
+ * <p>
+ * If you imagine something like a temperature peripheral,
+ * this can have automated assertions
  */
 public class LedStripVendorTest {
 
