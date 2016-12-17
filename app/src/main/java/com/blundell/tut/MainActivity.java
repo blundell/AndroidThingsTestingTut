@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         // setup our background threading mechanism
         // this is used to send commands to the peripherals
         pioThread = new HandlerThread("pioThread");
-        handler = new Handler(pioThread.getLooper());
         pioThread.start();
+        handler = new Handler(pioThread.getLooper());
         // instantiate a connection to our peripheral
         ledStrip = getLedStrip();
         animateRunnable = new AnimateRunnable(ledStrip, handler);
