@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         if (BuildConfig.MOCK_MODE) {
             return new MockLedStrip();
         } else {
-            return new Apa101LedStrip();
+            return new Apa102LedStrip();
         }
     }
 

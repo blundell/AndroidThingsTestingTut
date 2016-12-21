@@ -22,7 +22,7 @@ public class LedStripVendorTest {
 
     @Test
     public void ledsBlinkSingleColor() throws Exception {
-        LedStrip ledStrip = new Apa101LedStrip();
+        LedStrip ledStrip = new Apa102LedStrip();
 
         ledStrip.colorBlink(2, Color.RED);
 
@@ -31,7 +31,7 @@ public class LedStripVendorTest {
 
     @Test
     public void ledsBlinkAlternateColors() throws Exception {
-        LedStrip ledStrip = new Apa101LedStrip();
+        LedStrip ledStrip = new Apa102LedStrip();
 
         ledStrip.colorBlink(2, Color.RED, Color.YELLOW);
 

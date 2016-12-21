@@ -8,9 +8,9 @@ import com.google.android.things.contrib.driver.apa102.Apa102;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class Apa101LedStrip implements LedStrip {
+public class Apa102LedStrip implements LedStrip {
 
-    private static final String TAG = Apa101LedStrip.class.getSimpleName();
+    private static final String TAG = Apa102LedStrip.class.getSimpleName();
 
     // LED configuration
     private static final int NUM_LEDS = 7;
@@ -21,7 +21,7 @@ public class Apa101LedStrip implements LedStrip {
 
     private int[] ledColors = new int[NUM_LEDS];
 
-    public Apa101LedStrip() {
+    public Apa102LedStrip() {
         try {
             driver = new Apa102(BoardDefaults.getSPIPort(), LED_MODE);
             driver.setBrightness(LED_BRIGHTNESS);
