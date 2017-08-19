@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
 
     defaultConfig {
         applicationId "com.blundell.tut"
-        minSdkVersion 24
-        targetSdkVersion 25
+        minSdkVersion 26
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -25,10 +25,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.google.android.things.contrib:driver-apa102:0.1'
+    compile 'com.android.support:appcompat-v7:26.0.1'
+    compile 'com.google.android.things.contrib:driver-apa102:0.3'
 
-    provided 'com.google.android.things:androidthings:0.1-devpreview'
+    provided 'com.google.android.things:androidthings:0.5-devpreview'
 
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
