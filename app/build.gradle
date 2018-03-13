@@ -13,13 +13,17 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions "foo"
+
     productFlavors {
         sensorsConnected {
             buildConfigField "boolean", "MOCK_MODE", "false"
+            dimension "foo"
         }
 
         sensorsNotConnected {
             buildConfigField "boolean", "MOCK_MODE", "true"
+            dimension "foo"
         }
     }
 }
